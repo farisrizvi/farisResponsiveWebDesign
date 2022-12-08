@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        #p1 {
+            background: green;
+            width: 100%;
+            text-align: center;
+            padding: 200px 0;
+            font-size: 45px;
+        }
+
+        @media only screen and (max-width: 900px) {
+            #p1 {
+                background: blue;
+                width: 100%;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 35px;
+            }
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            #p1 {
+                background: red;
+                width: 100%;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 25px;
+            }
+
+        }
+
+        #p2 {
+            background-color: rgb(125, 125, 202);
+            width: 50%;
+            float: right;
+            text-align: center;
+            padding: 200px 0;
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width: 900px) {
+
+            #p2 {
+                background-color: gold;
+                width: 100%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 45px;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+
+            #p2 {
+                background-color: darkgray;
+                width: 100%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 25px;
+            }
+        }
+
+
+        #p3 {
+            background: rgba(255, 0, 0, 0.384);
+            width: 50%;
+            text-align: center;
+            padding: 200px 0;
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width: 900px) {
+
+            #p3 {
+                background: powderblue;
+                width: 100%;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 45px;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            #p3 {
+                background: teal;
+                width: 100%;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 25px;
+            }
+
+        }
+
+        #p4 {
+            background: aqua;
+            width: 33.3%;
+            float: left;
+            text-align: center;
+            padding: 200px 0;
+            font-size: 50px;
+        }
+
+
+
+        @media only screen and (max-width:900px) {
+            #p4 {
+                background: rosybrown;
+                width: 100%;
+                float: left;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 45px;
+            }
+
+        }
+
+        @media only screen and (max-width:600px) {
+            #p4 {
+                background: rebeccapurple;
+                width: 100%;
+                float: left;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 20px;
+            }
+        }
+
+
+        #p5 {
+            background: aquamarine;
+            width: 33.3%;
+            float: right;
+            text-align: center;
+            padding: 200px 0;
+            font-size: 50px;
+        }
+
+
+
+        @media only screen and (max-width:900px) {
+            #p5 {
+                background: hotpink;
+                width: 100%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 45px;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            #p5 {
+                background: darkkhaki;
+                width: 100%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 20px;
+            }
+        }
+
+        #p6 {
+            background: white;
+            width: 33.3%;
+            float: right;
+            text-align: center;
+            padding: 200px 0;
+            font-size: 50px;
+        }
+
+
+        @media only screen and (max-width:900px) {
+            #p6 {
+                background: lawngreen;
+                width: 100%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 45px;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            #p6 {
+                background: burlywood;
+                width: 100%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 20px;
+            }
+        }
+
+
+
+
+        #Rin1 {
+            background: plum;
+            width: 25%;
+            float: right;
+            text-align: center;
+            padding: 200px 0;
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width:900px) {
+            #Rin1 {
+                background: darkolivegreen;
+                width: 50%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 40px;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            #Rin1 {
+                background: darkorchid;
+                width: 100%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 20px;
+            }
+        }
+
+
+
+        #Rin2 {
+            background: peachpuff;
+            width: 25%;
+            float: right;
+            text-align: center;
+            padding: 200px 0;
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width:900px) {
+            #Rin2 {
+                background: palegreen;
+                width: 50%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 40px;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            #Rin2 {
+                background: lightcoral;
+                width: 100%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 20px;
+            }
+        }
+
+
+
+        #Rin3 {
+            background: palevioletred;
+            width: 25%;
+            float: right;
+            text-align: center;
+            padding: 200px 0;
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width:900px) {
+
+            #Rin3 {
+                background: darkmagenta;
+                width: 50%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 40px;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+
+            #Rin3 {
+                background: gray;
+                width: 100%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 20px;
+            }
+        }
+
+        #Rin4 {
+            background: pink;
+            width: 25%;
+            float: right;
+            text-align: center;
+            padding: 200px 0;
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width:900px) {
+
+            #Rin4 {
+                background: blue;
+                width: 50%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 40px;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+
+            #Rin4 {
+                background: blue;
+                width: 100%;
+                float: right;
+                text-align: center;
+                padding: 200px 0;
+                font-size: 20px;
+            }
+        }
+
+
+
+
+          #QR1 {
+                    background: palegoldenrod;
+                    width: 16.6%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 50px;
+                }
+                @media only screen and (max-width: 900px){
+                #QR1 {
+                    background:palevioletred;
+                    width: 33.3%;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 45px;
+            }
+        }
+                @media only screen and (max-width: 500px) {
+                    #QR1 {
+                    width: 100%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 25px;
+                    background-color: darkkhaki;
+            }
+}
+                #QR2 {
+                    background: darkred;
+                    width: 16.6%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 50px;
+                }
+                @media only screen and (max-width: 900px){
+                #QR2 {
+                    background:darkorange;
+                    width: 33.3%;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 45px;
+            }
+        }
+                @media only screen and (max-width: 500px) {
+                #QR2 {
+                    width: 100%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 25px;
+                    background-color:darkgreen;
+            }
+}
+                #QR3 {
+                    background: pink;
+                    width: 16.6%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 50px;
+                }
+                @media only screen and (max-width: 900px){
+                #QR3 {
+                    background:black;
+                    width: 33.3%;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 45px;
+                    color: red;
+            }
+        }
+                @media only screen and (max-width: 500px) {
+                #QR3 {
+                    width: 100%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 25px;
+                    background-color: rebeccapurple;
+            }
+}
+                #QR4 {
+                    background: gray;
+                    width: 16.6%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 50px;
+                }
+                @media only screen and (max-width: 900px){
+                #QR4 {
+                    background:goldenrod;
+                    width: 33.3%;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 45px;
+            }
+        }
+                @media only screen and (max-width: 500px) {
+                #QR4 {
+                    width: 100%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 25px;
+                    background-color: gray;
+            }
+}
+                #QR5 {
+                    background: blanchedalmond;
+                    width: 16.6%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 50px;
+                }
+                @media only screen and (max-width: 900px){
+                #QR5 {
+                    background:teal;
+                    width: 33.3%;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 45px;
+            }
+        }
+                @media only screen and (max-width: 500px) {
+                #QR5 {
+                    width: 100%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 25px;
+                    background-color: cyan;
+            }
+}
+           #QR6 {
+                    background: red;
+                    width: 16.6%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 50px;
+                }
+                @media only screen and (max-width: 900px){
+                #QR6 {
+                    background:brown;
+                    width: 33.3%;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 45px;
+            }
+        }
+                @media only screen and (max-width: 500px) {
+                #QR6 {
+                    width: 100%;
+                    float: right;
+                    text-align: center;
+                    padding: 200px 0;
+                    font-size: 25px;
+                    background-color: navy;
+            }
+}
+
+
+
+
+
+        /* #footer {
+            background: orange;
+            width: 100%;
+            text-align: center;
+            padding: 100px 0;
+            font-size: 50px;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#p1">#Halfs</a></li>
+        <li><a href="#p4">#Thirds</a></li>
+        <li><a href="#Rin1">#Fourths</a></li>
+        <li><a href="#QR1">Fifths</a></li>
+        <li style="float:right"><a class="active" href="#about">About</a></li>
+    </ul>
+
+
+    <div id="p1">Place for Introdctory Image/Video</div>
+    <div id="p2">Halfs</div>
+    <div id="p3">Halfs</div>
+
+    <div id="p4">Thirds</div>
+    <div id="p5">Thirds</div>
+    <div id="p6">Thirds</div>
+
+    <div id="Rin1">Fourths</div>
+    <div id="Rin2">Fourths</div>
+    <div id="Rin3">Fourths</div>
+    <div id="Rin4">Fourths</div>
+
+    <div id="QR1">Sixths</div>
+    <div id="QR2">Sixths</div>
+    <div id="QR3">Sixths</div>
+    <div id="QR4">Sixths</div>
+    <div id="QR5">Sixths</div>
+    <div id="QR6">Sixths</div>
+
+    <div id="footer">footer</div>
+
+    </div>
+</body>
+
+</html>
